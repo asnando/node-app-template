@@ -4,6 +4,7 @@ The goal of this project is to run a simple hello world application inside a con
 - `test drive development`
 - `monitoring, alert, observability`
 - `monorepo file structure`
+- `code coverage`
 
 This project can also contain some common patterns from microservice architecture.
 
