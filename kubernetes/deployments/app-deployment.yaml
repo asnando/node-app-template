@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+  labels:
+    app: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+        - name: awesome-aws-app
+          image: ffrm/awesome-aws-app
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          # resources:
+          #   requests:
+          #     memory: "64Mi"
+          #     cpu: "50m"
+          #   limits:
+          #     memory: "256Mi"
+          #     cpu: "500m"
