@@ -2,7 +2,7 @@
 The goal of this project is to run a simple hello world application inside a container managed by kubernetes inside the aws infrastructure. This project will suport:
 - `continuos integration and deployment`
 - `test drive development`
-- `monitoring, alert, observability`
+- `monitoring, log aggregation, alert`
 - `monorepo file structure`
 - `code coverage`
 

@@ -1,12 +1,13 @@
 import winston, { Logger } from 'winston';
 
+const LOGGER_OUTPUT_DIR = 'log';
 const LOGGER_FORMART = winston.format.json();
 
 const appLogger = winston.createLogger({
   format: LOGGER_FORMART,
   transports: [
     new winston.transports.Console(),
-    new winston.transports.File({ filename: 'app.log' }),
+    new winston.transports.File({ filename: 'app.log', dirname: LOGGER_OUTPUT_DIR }),
   ],
 });
 
@@ -14,7 +15,7 @@ const requestsLogger = winston.createLogger({
   format: LOGGER_FORMART,
   transports: [
     new winston.transports.Console(),
-    new winston.transports.File({ filename: 'requests.log' }),
+    new winston.transports.File({ filename: 'requests.log', dirname: LOGGER_OUTPUT_DIR }),
   ],
 });
 
