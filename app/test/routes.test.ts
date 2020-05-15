@@ -31,6 +31,12 @@ describe('Test server endpoints', () => {
     expect(res.status).toBe(200);
     expect(res.text).toMatch(/\d{1,}\.\d{1,}\.\d{1,}/);
   });
+
+  it('should fall into not found route', async () => {
+    const res = await request(server).get('/something');
+    expect(res.status).toBe(404);
+    expect(res.text).toBe('Not found');
+  });
 });
 
 afterAll(async () => {
