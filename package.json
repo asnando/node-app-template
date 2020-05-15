@@ -1,0 +1,27 @@
+{
+  "name": "@ffrm/node-app-template",
+  "version": "1.0.0",
+  "description": "This is a simple Node.js hello world application to be used as template.",
+  "main": "app/src/index.ts",
+  "scripts": {
+    "coverage": "cd app && npm run coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffrm/node-app-template.git"
+  },
+  "author": "Fernando Rama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ffrm/node-app-template/issues"
+  },
+  "homepage": "https://github.com/ffrm/node-app-template#readme",
+  "devDependencies": {
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run coverage"
+    }
+  }
+}
