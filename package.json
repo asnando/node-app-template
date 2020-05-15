@@ -21,7 +21,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run coverage && git commit"
+      "pre-commit": "npm run coverage && git add -A"
     }
   }
 }
