@@ -35,7 +35,7 @@ export function printRequest(message: any) {
 }
 
 export const printRequestStream = {
-  write: function(message: string) {
+  write(message: string) {
     printRequest(message);
   },
 };

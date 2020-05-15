@@ -18,10 +18,10 @@ const metricsMiddleware = promBundle({
 
 export interface IExpressApplicationWithShutdown extends Server {
   shutdown: Function,
-};
+}
 
 function createServer(serverPort: number = getEnv('SERVER_PORT', 8080)): Promise<IExpressApplicationWithShutdown> {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const onServerUp = (() => {
       print(`Server up and running at ${serverPort} port.`);
     });
