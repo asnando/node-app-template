@@ -7,6 +7,7 @@
     "tsc": "tsc",
     "lint": "tsc --noEmit && eslint 'src/**/*.{js,ts,tsx}' --fix",
     "test": "jest",
+    "ci": "npm install",
     "start": "npm run tsc && node build/src/index.js",
     "dev": "nodemon -L"
   },
