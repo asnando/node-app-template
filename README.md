@@ -1,6 +1,8 @@
 # Node App Template
 <img src="https://github.com/ffrm/node-app-template/workflows/Build/badge.svg" />
 
+<img src="https://github.com/ffrm/node-app-template/tree/master/app/coverage/coverage.svg" />
+
 This is a simple Node.js hello world application to be used as template for doing things like:
 
 - `Continuous integration and deployment`

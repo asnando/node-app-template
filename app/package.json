@@ -7,7 +7,7 @@
     "tsc": "tsc",
     "lint": "tsc --noEmit && eslint 'src/**/*.{js,ts,tsx}' --fix",
     "test": "jest",
-    "coverage": "jest --coverage",
+    "coverage": "jest --coverage && coverage-badger -r coverage/clover.xml -d coverage/",
     "ci": "npm install",
     "start": "npm run tsc && node build/src/index.js",
     "dev": "nodemon -L"
@@ -35,6 +35,7 @@
     "@types/morgan": "^1.9.0",
     "@types/node": "^13.13.2",
     "@types/supertest": "^2.0.9",
+    "coverage-badger": "^1.0.1",
     "eslint": "^6.8.0",
     "jest": "^26.0.1",
     "nodemon": "^2.0.3",
